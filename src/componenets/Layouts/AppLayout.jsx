@@ -6,10 +6,7 @@ import { Drawer, Grid, Skeleton } from "@mui/material";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-// import {
-//   NEW_MESSAGE_ALERT,
-//   NEW_REQUEST,
-// } from "../../../../server/constants/event";
+
 import { useErrors, useSocketEvents } from "../../hooks/hook";
 import { getOrSaveFromStorage } from "../../lib/features";
 import { useMyChatQuery } from "../../redux/api/api";
