@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react/display-name */
 
@@ -5,10 +6,10 @@ import { Drawer, Grid, Skeleton } from "@mui/material";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import {
-  NEW_MESSAGE_ALERT,
-  NEW_REQUEST,
-} from "../../../../server/constants/event";
+// import {
+//   NEW_MESSAGE_ALERT,
+//   NEW_REQUEST,
+// } from "../../../../server/constants/event";
 import { useErrors, useSocketEvents } from "../../hooks/hook";
 import { getOrSaveFromStorage } from "../../lib/features";
 import { useMyChatQuery } from "../../redux/api/api";
@@ -26,7 +27,12 @@ import Title from "../shared/Title";
 import ChatList from "../specific/ChatList";
 import Profile from "../specific/Profile";
 import Header from "./Header";
-import { ONLINE_USERS, REFECTH_CHATS } from "../constants/event";
+import {
+  NEW_MESSAGE_ALERT,
+  NEW_REQUEST,
+  ONLINE_USERS,
+  REFECTH_CHATS,
+} from "../constants/event";
 import DeleteChatMenu from "../dialogs/DeleteChatMenu";
 // import { useParams } from "react-router-dom";
 
@@ -156,7 +162,6 @@ const AppLayout = () => (WrappedComponent) => {
           >
             <Profile user={user} />
           </Grid>
-          
         </Grid>
       </>
     );
