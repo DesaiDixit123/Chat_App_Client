@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://chat-app-server-zo17.onrender.com/",
+        target: "https://chat-app-server-1-pwau.onrender.com",
         changeOrigin: true,
       },
     },

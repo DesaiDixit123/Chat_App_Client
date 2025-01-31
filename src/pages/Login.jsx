@@ -24,7 +24,7 @@ const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
-  const toggleLogin = () => {
+  const toggleLogin = () => { 
     setIsLogin((prev) => !prev);
   };
 
